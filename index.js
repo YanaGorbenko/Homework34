@@ -444,6 +444,7 @@ searchForm.addEventListener('submit', async e => {
   search = searchInput.value.trim();
   currentPage = 1;
   bookList.innerHTML = '';
+  searchInput.value = '';
   searchForm.reset();
   buttonAllBooks.style.display = 'inline';
   await getBooks();
